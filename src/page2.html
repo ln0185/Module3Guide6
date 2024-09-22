@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body class="font-['Open_Sans', sans-serif]">
+
+                <!-- Navbar -->
+
+
+     <nav class="fixed rounded-md top-0 z-20 p-4 w-full grid md:max-w-8xl md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:bg-slate-800">
+
+        <div class="flex justify-between items-center md:justify-center mt-2">
+            <a class="md:hidden" href="./index.html">
+            <img src="ressources/mountains-logo.svg" alt="mountain logo" class="w-14"></a>
+            <a class="hidden md:block" href="./index.html"> 
+            <h3 class="hidden md:text-slate-100 text-5xl p-2 font-['Lobster'] md:block">Arctic Mountains
+            </h3>
+            </a>
+
+
+          <button class="icone-toggle mr-6 bg-gray-50/50 rounded-md p-2 md:hidden">
+            <img src="ressources/menu.svg" alt="hamburger logo" class="h-6 w-6">
+          </button>
+        </div>
+        <ul class="toggle-menu rounded-xl hidden px-1 bg-gray-200  flex-col md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center">
+
+          <li class="py-2 text-center border-t border-gray-400 md:border-0">
+            <a 
+            href="./index.html"
+            class="font-medium text-xl md:text-slate-50 hover:underline md:hover:underline"
+            >Home</a>
+          </li>
+
+          <li class="py-2 text-center border-t border-gray-400 md:border-0">
+            <a 
+            href="./index.html#tours"
+            class="font-medium text-xl md:text-slate-50 hover:underline md:hover:underline"
+            >Tours</a>
+          </li>
+
+          <li class="py-2 text-center border-t border-b border-gray-400 md:border-0">
+            <a 
+            href="./page2.html"
+            class="font-medium text-xl md:text-slate-50 hover:underline md:hover:underline"
+            >Contact</a>
+          </li>
+        </ul>
+      </nav>
+         
+                      <!-- Form Section -->
+
+    <section id="contact" class="bg-gray-50 pb-32 md:pb-40">
+
+      <h2 class="text-center font-medium pt-10 pb-6 text-3xl md:text-4xl">
+        Let's get in touch
+      </h2>
+      <hr class="bloc mx-auto bg-gray-600 h-1 mb-10 w-44">
+
+      <form class="space-y-6 relative bg-white max-w-3xl mx-auto py-16 px-4 sm:px-6 lg:px-8 xl pl-12">
+
+        <div>
+          <label for="name" class="text-gray-500 mb-2 block">Last Name</label>
+          <input type="text" id="name" placeholder="Your name" class="block w-full ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-500 border-gray-300 rounded-md">
+        </div>
+
+        <div>
+          <label for="firstname" class="text-gray-500 mb-2 block">First Name</label>
+          <input type="text" id="firstname" placeholder="Your name" class="block w-full ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-500 border-gray-300 rounded-md">
+        </div>
+
+        <div>
+          <label for="message" class="text-gray-500 mb-2 block">Your message</label>
+          <textarea type="text" id="message" placeholder="Your message" class="block w-full ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-500 border-gray-300 rounded-md"></textarea>
+        </div>
+
+        <button class="py-3 px-6 border-transparent shadow-sm text-base font-medium rounded-md text-white bg-sky-500">Send</button>
+      </form>
+
+    </section>
+
+                    <!-- Footer -->
+
+    <footer class="bg-gray-800 py-5">
+
+    
+
+      <div class="mb-5 flex space-x-6 justify-center text-white">
+
+        <a href="#">
+          <img src="ressources/fb.svg" alt="fb logo" class="w-6">
+        </a>
+      
+        <a href="#">
+          <img src="ressources/instagram.svg" alt="instagram logo" class="w-6">
+        </a>
+      
+        <a href="#">
+          <img src="ressources/githubpetitlogo.svg" alt="github logo" class="w-6">
+        </a>
+      
+      
+      </div>
+
+      <hr class="w-36 mx-auto mb-5">
+
+      <p class="text-center mt-8 text-base text-gray-400 md:mt-0">&copy; 2024 ALL RIGHTS RESERVED</p>
+
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
